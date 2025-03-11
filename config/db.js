@@ -6,7 +6,7 @@ if (!cached) {
     cached = global.mongoose = { conn: null, promise: null}
 }
 
-async function cnnectDB() {
+async function connectDB() {
 
     if (cached.conn) {
         return cached.conn
