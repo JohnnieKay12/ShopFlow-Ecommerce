@@ -29,7 +29,7 @@ const HeaderSlider = () => {
       imgSrc: assets.header_macbook_image,
     },
     {
-      id: 2,
+      id: 4,
       title: "Next-Level Gaming Starts Here - Discover PlayStation 5 Today!",
       offer: "Hurry up only few lefts!",
       buttonText1: "Shop Now",
@@ -37,7 +37,7 @@ const HeaderSlider = () => {
       imgSrc: assets.header_playstation_image,
     },
     {
-      id: 3,
+      id: 5,
       title: "Power Meets Elegance - Apple MacBook Pro is Here for you!",
       offer: "Exclusive Deal 40% Off",
       buttonText1: "Order Now",
@@ -83,7 +83,9 @@ const HeaderSlider = () => {
                 </button>
                 <button className="group flex items-center gap-2 px-6 py-2.5 font-medium">
                   {slide.buttonText2}
-                  <Image className="group-hover:translate-x-1 transition" src={assets.arrow_icon} alt="arrow_icon" />
+                  {assets.arrow_icon && (
+                    <Image className="group-hover:translate-x-1 transition" src={assets.arrow_icon} alt="arrow_icon" />
+                  )}
                 </button>
               </div>
             </div>
@@ -98,10 +100,12 @@ const HeaderSlider = () => {
         ))}
       </div>
 
+      {/* Slide Indicator Dots */}
+
       <div className="flex items-center justify-center gap-2 mt-8">
         {sliderData.map((_, index) => (
           <div
-            key={index}
+            key= {`dot-${index}`}
             onClick={() => handleSlideChange(index)}
             className={`h-2 w-2 rounded-full cursor-pointer ${
               currentSlide === index ? "bg-orange-600" : "bg-gray-500/30"

@@ -1,5 +1,4 @@
 'use client'
-import { productsDummyData, userDummyData } from "@/assets/assets";
 import { useAuth, useUser } from "@clerk/nextjs";
 import axios from "axios";
 import { useRouter } from "next/navigation";
@@ -21,7 +20,7 @@ export const AppContextProvider = (props) => {
     const { getToken } = useAuth()
 
     const [products, setProducts] = useState([])
-    const [userData, setUserData] = useState(false)
+    const [userData, setUserData] = useState(null)
     const [isSeller, setIsSeller] = useState(false)
     const [cartItems, setCartItems] = useState({})
 
@@ -44,7 +43,7 @@ export const AppContextProvider = (props) => {
     const fetchUserData = async () => {
         try {
             
-            if (user.publicMetadata.role === 'seller') {
+            if (user?.publicMetadata?.role === 'seller') {
                 setIsSeller(true)
             }
 
@@ -66,7 +65,7 @@ export const AppContextProvider = (props) => {
 
     const addToCart = async (itemId) => {
 
-        let cartData = structuredClone(cartItems);
+        let cartData = JSON.parse(JSON.stringify(cartItems));
         if (cartData[itemId]) {
             cartData[itemId] += 1;
         }
@@ -87,7 +86,7 @@ export const AppContextProvider = (props) => {
 
     const updateCartQuantity = async (itemId, quantity) => {
 
-        let cartData = structuredClone(cartItems);
+        let cartData = JSON.parse(JSON.stringify(cartItems));
         if (quantity === 0) {
             delete cartData[itemId];
         } else {
