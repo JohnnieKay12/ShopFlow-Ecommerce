@@ -26,16 +26,20 @@ export const AppContextProvider = (props) => {
 
     const fetchProductData = async () => {
         try {
+            console.log("Fetching products..."); 
             
             const {data} = await axios.get('/api/product/list')
+            console.log("Product data response:", data);
 
             if (data.success) {
                 setProducts(data.products)
+                console.log("Products set successfully:", data.products);
             } else {
                 toast.error(data.message)
             }
 
         } catch (error) {
+            console.error("Error fetching products:", error);
             toast.error(error.message)
         }
     }
@@ -53,7 +57,8 @@ export const AppContextProvider = (props) => {
 
             if (data.success) {
                 setUserData(data.user)
-                setCartItems(data.user.cartItems)
+                setCartItems(data.user.cartItems || {});
+                // setCartItems(data.user.cartItems)
             } else {
                 toast.error(data.message)
             }
@@ -114,16 +119,29 @@ export const AppContextProvider = (props) => {
         return totalCount;
     }
 
+
     const getCartAmount = () => {
         let totalAmount = 0;
         for (const items in cartItems) {
-            let itemInfo = products.find((product) => product._id === items);
-            if (cartItems[items] > 0) {
+            let itemInfo = products.find((product) => product._id.toString() === items); // Convert to string
+            if (itemInfo && cartItems[items] > 0) { // ✅ Ensure itemInfo exists
                 totalAmount += itemInfo.offerPrice * cartItems[items];
             }
         }
         return Math.floor(totalAmount * 100) / 100;
-    }
+    };
+    
+
+    // const getCartAmount = () => {
+    //     let totalAmount = 0;
+    //     for (const items in cartItems) {
+    //         let itemInfo = products.find((product) => product._id === items);
+    //         if (cartItems[items] > 0) {
+    //             totalAmount += itemInfo.offerPrice * cartItems[items];
+    //         }
+    //     }
+    //     return Math.floor(totalAmount * 100) / 100;
+    // }
 
     useEffect(() => {
         fetchProductData()

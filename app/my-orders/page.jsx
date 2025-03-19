@@ -30,7 +30,8 @@ const MyOrders = () => {
                 toast.error(data.message)
             }
         } catch (error) {
-            toast.error(error.message)
+            toast.error(error.message);
+            setLoading(false);
         }
     }
 
@@ -57,7 +58,10 @@ const MyOrders = () => {
                                     />
                                     <p className="flex flex-col gap-3">
                                         <span className="font-medium text-base">
-                                            {order.items.map((item) => item.product.name + ` x ${item.quantity}`).join(", ")}
+                                        {order.items.map((item) => 
+                                        item.product ? `${item.product.name} x ${item.quantity}` : "Unknown Product").join(", ")}
+
+                                            {/* {order.items.map((item) => item.product.name + ` x ${item.quantity}`).join(", ")} */}
                                         </span>
                                         <span>Items : {order.items.length}</span>
                                     </p>

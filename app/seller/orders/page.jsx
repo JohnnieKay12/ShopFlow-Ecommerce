@@ -69,7 +69,7 @@ const Orders = () => {
                                     <br />
                                     <span >{order.address.area}</span>
                                     <br />
-                                    <span>{`${order.address.city}, ${order.address.state}`}</span>
+                                    <span>{`₦{order.address.city}, ₦{order.address.state}`}</span>
                                     <br />
                                     <span>{order.address.phoneNumber}</span>
                                 </p>

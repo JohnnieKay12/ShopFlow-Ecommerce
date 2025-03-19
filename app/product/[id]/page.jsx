@@ -85,9 +85,9 @@ const Product = () => {
                         {productData.description}
                     </p>
                     <p className="text-3xl font-medium mt-6">
-                        ${productData.offerPrice}
+                        ₦{Math.floor(productData.offerPrice * 1000).toLocaleString('en-NG')}
                         <span className="text-base font-normal text-gray-800/60 line-through ml-2">
-                            ${productData.price}
+                            ₦{Math.floor(productData.price * 1000).toLocaleString('en-NG')}
                         </span>
                     </p>
                     <hr className="bg-gray-600 my-6" />

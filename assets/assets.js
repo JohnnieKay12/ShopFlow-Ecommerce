@@ -17,6 +17,7 @@ import arrow_right_icon_colored from "./arrow_right_icon_colored.svg";
 import my_location_image from "./my_location_image.svg";
 import arrow_icon_white from "./arrow_icon_white.svg";
 import heart_icon from "./heart_icon.svg";
+import heart_filled_icon from "./heart_filled_icon.svg";
 import star_icon from "./star_icon.svg";
 import redirect_icon from "./redirect_icon.svg";
 import star_dull_icon from "./star_dull_icon.svg";
@@ -46,6 +47,48 @@ import product_details_page_apple_earphone_image2 from "./product_details_page_a
 import product_details_page_apple_earphone_image3 from "./product_details_page_apple_earphone_image3.png";
 import product_details_page_apple_earphone_image4 from "./product_details_page_apple_earphone_image4.png";
 import product_details_page_apple_earphone_image5 from "./product_details_page_apple_earphone_image5.png";
+import iphone_sixteen_image from "./iphone_sixteen_image.png";
+import smart_watch from "./smart_watch.png";
+import mens_wear_image1 from "./mens_wear_image1.jpg";
+import mens_wear_image2 from "./mens_wear_image2.jpg";
+import mens_wear_image3 from "./mens_wear_image3.jpg";
+import mens_wear_image4 from "./mens_wear_image4.jpg";
+import mens_wear_image5 from "./mens_wear_image5.jpg";
+import mens_wear_image6 from "./mens_wear_image6.jpg";
+import mens_wear_image7 from "./mens_wear_image7.jpg";
+import mens_wear_image8 from "./mens_wear_image8.jpg";
+import mens_wear_image9 from "./mens_wear_image9.jpg";
+import mens_wear_image10 from "./mens_wear_image10.jpg";
+import women_wear_image1 from "./women_wear_image1.jpg"
+import women_wear_image2 from "./women_wear_image2.jpg"
+import women_wear_image3 from "./women_wear_image3.jpg"
+import women_wear_image4 from "./women_wear_image4.jpg"
+import women_wear_image5 from "./women_wear_image5.jpg"
+import women_wear_image6 from "./women_wear_image6.jpg"
+import women_wear_image7 from "./women_wear_image7.jpg"
+import women_wear_image8 from "./women_wear_image8.jpg"
+import women_wear_image9 from "./women_wear_image9.jpg"
+import women_wear_image10 from "./women_wear_image10.jpg"
+import kids_wear_image1 from "./kids_wear_image1.jpg"
+import kids_wear_image2 from "./kids_wear_image2.jpg"
+import kids_wear_image3 from "./kids_wear_image3.jpg"
+import kids_wear_image4 from "./kids_wear_image4.jpg"
+import kids_wear_image5 from "./kids_wear_image5.jpg"
+import kids_wear_image6 from "./kids_wear_image6.jpg"
+import kids_wear_image7 from "./kids_wear_image7.jpg"
+import kids_wear_image8 from "./kids_wear_image8.jpg"
+import kids_wear_image9 from "./kids_wear_image9.jpg"
+import kids_wear_image10 from "./kids_wear_image10.jpg"
+import footwear_image1 from "./footwear_image1.jpg"
+import footwear_image2 from "./footwear_image2.jpg"
+import footwear_image3 from "./footwear_image3.jpg"
+import footwear_image4 from "./footwear_image4.jpg"
+import footwear_image5 from "./footwear_image5.jpg"
+import footwear_image6 from "./footwear_image6.jpg"
+import footwear_image7 from "./footwear_image7.jpg"
+import footwear_image8 from "./footwear_image8.jpg"
+import footwear_image9 from "./footwear_image9.jpg"
+import footwear_image10 from "./footwear_image10.jpg"
 
 export const assets = {
   logo,
@@ -67,10 +110,13 @@ export const assets = {
   my_location_image,
   arrow_icon_white,
   heart_icon,
+  heart_filled_icon,
   star_icon,
   redirect_icon,
   star_dull_icon,
   header_headphone_image,
+  iphone_sixteen_image,
+  smart_watch,
   header_playstation_image,
   header_macbook_image,
   macbook_image,
@@ -95,6 +141,46 @@ export const assets = {
   product_details_page_apple_earphone_image3,
   product_details_page_apple_earphone_image4,
   product_details_page_apple_earphone_image5,
+  mens_wear_image1: "/images/mens_wear_image1.jpg",
+  mens_wear_image2: "/images/mens_wear_image2.jpg",
+  mens_wear_image3,
+  mens_wear_image4,
+  mens_wear_image5,
+  mens_wear_image6,
+  mens_wear_image7,
+  mens_wear_image8,
+  mens_wear_image9,
+  mens_wear_image10,
+  women_wear_image1,
+  women_wear_image2,
+  women_wear_image3,
+  women_wear_image4,
+  women_wear_image5,
+  women_wear_image6,
+  women_wear_image7,
+  women_wear_image8,
+  women_wear_image9,
+  women_wear_image10,
+  kids_wear_image1,
+  kids_wear_image2,
+  kids_wear_image3,
+  kids_wear_image4,
+  kids_wear_image5,
+  kids_wear_image6,
+  kids_wear_image7,
+  kids_wear_image8,
+  kids_wear_image9,
+  kids_wear_image10,
+  footwear_image1,
+  footwear_image2,
+  footwear_image3,
+  footwear_image4,
+  footwear_image5,
+  footwear_image6,
+  footwear_image7,
+  footwear_image8,
+  footwear_image9,
+  footwear_image10,
   checkmark
 };
 

@@ -6,7 +6,8 @@ import { NextResponse } from "next/server";
 export async function POST(request) {
     try {
         
-        const { userId } = getAuth(request)
+        const { userId } = getAuth(request);
+        console.log("User ID:", userId);
         const {address} = await request.json()
 
         await connectDB()
