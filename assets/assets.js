@@ -36,6 +36,7 @@ import asus_laptop_image from "./asus_laptop_image.png";
 import projector_image from "./projector_image.png";
 import playstation_image from "./playstation_image.png";
 import girl_with_headphone_image from "./girl_with_headphone_image.png";
+import girl_with_headphone1_image from "./girl_with_headphone1_image.png";
 import girl_with_earphone_image from "./girl_with_earphone_image.png";
 import md_controller_image from "./md_controller_image.png";
 import sm_controller_image from "./sm_controller_image.png";
@@ -89,6 +90,10 @@ import footwear_image7 from "./footwear_image7.jpg"
 import footwear_image8 from "./footwear_image8.jpg"
 import footwear_image9 from "./footwear_image9.jpg"
 import footwear_image10 from "./footwear_image10.jpg"
+import about_us_image from "./about_us_image.webp"
+import fast_delivery_image from "./fast_delivery_image.png"
+import secure_payment_image from "./secure_payment_image.png"
+import support_image from "./support_image.png"
 
 export const assets = {
   logo,
@@ -131,6 +136,7 @@ export const assets = {
   projector_image,
   playstation_image,
   girl_with_headphone_image,
+  girl_with_headphone1_image,
   girl_with_earphone_image,
   md_controller_image,
   sm_controller_image,
@@ -181,6 +187,10 @@ export const assets = {
   footwear_image8,
   footwear_image9,
   footwear_image10,
+  about_us_image,
+  fast_delivery_image,
+  secure_payment_image,
+  support_image,
   checkmark
 };
 
